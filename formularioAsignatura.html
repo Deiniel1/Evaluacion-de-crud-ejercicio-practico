@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asignatura</title>
+    <link rel="stylesheet" href="diseño-form.css">
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2f3;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #0C713D;
+        margin-top: 30px;
+    }
+    form {
+        width: 400px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button-group input[type="submit"],
+    .button-group button {
+        background-color: #0C713D;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    .button-group input[type="submit"]:hover,
+    .button-group button:hover {
+        background-color: #09562d;
+    }
+    .button-group .secondary {
+        background-color: #045611;
+    }
+    .button-group .secondary:hover {
+        background-color: #025513;
+    }
+</style>
+
+
+
+
+</head>
+<body>
+
+<h1>REGISTRO DE ASIGNATURA</h1>
+
+<form action="procesarAsignatura.php" method="POST">
+    <label>Nombre de la Asignatura:</label>
+    <input type="text" name="nombre-asi" required>
+
+    <label>Codigo de Asignatura:</label>
+    <textarea name="codigo-asi" rows="3" required></textarea>
+
+    <label>Semestre:</label>
+    <input type="text" name="semestre-asi" required>
+
+    <label>id del profesor a asignar:</label>
+    <input type="text" name="id-pro" required>
+
+    
+
+    <div class="button-group">
+    <input type="submit" value="Registrar Asignatura">
+    <button type="reset" class="secondary">Limpiar datos</button>
+    <button type="button" class="secondary" onclick="location.href='menu.php'">Ir al menú principal</button>
+</div>
+
+</form>
+
+</body>
+</html>

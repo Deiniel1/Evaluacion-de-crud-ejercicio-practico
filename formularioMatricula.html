@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registrar Matrícula</title>
+<link rel="stylesheet" href="diseño-form.css">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2f3;
+    }
+    h1 {
+        text-align: center;
+        color: #0C713D;
+        margin-top: 30px;
+    }
+    form {
+        width: 400px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        background-color: #0C713D;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #09562d;
+    }
+</style>
+</head>
+<body>
+
+<h1>REGISTRAR MATRÍCULA</h1>
+
+<form action="procesarMatricula.php" method="POST">
+    <label for="ID_APR">ID del Estudiante:</label>
+    <input type="number" id="ID_APR" name="ID_APR" placeholder="Ingrese ID del estudiante" required>
+
+    <label for="id_asi">ID de la Asignatura:</label>
+    <input type="number" id="id_asi" name="id_asi" placeholder="Ingrese ID de la asignatura" required>
+
+    <label for="fec_mat">Fecha de Matrícula:</label>
+    <input type="date" id="fec_mat" name="fec_mat" required>
+
+    <label for="est_mat">Estado de la Matrícula:</label>
+    <input type="text" id="est_mat" name="est_mat" placeholder="Activa, Finalizada, Cancelada..." required>
+
+    <input type="submit" value="Registrar Matrícula">
+
+    
+        
+        <input type="reset" class="botones-complemento" id="btn-limpiar-datos" name="limpiar-datos" value="Limpiar datos">
+       <br><br> <input type="button" class="botones-complemento" id="btn-menu-principal" name="menu-principal" value="Ir al menu principal" onclick="window.location.href='menu.php'">
+
+</form>
+
+</body>
+</html>

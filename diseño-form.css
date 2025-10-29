@@ -1,0 +1,45 @@
+/*.input-oculto{
+    display: none;
+}
+
+.boton-edit{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: rgb(192, 10, 10);
+    border-radius: 15px;
+    border-color: rgb(185, 12, 12);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 20px;
+    text-align: center  ;
+
+}
+#formulario-aprendiz label{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.botones-complemento{
+     background-color: orange;
+     border-radius: 11px;
+     padding: 10px 13px;
+     color: green;
+     font-weight: bolder;
+     font-size: 18px;
+}
+
+body {
+  background-image: url('imagenes/lodob.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) 5px; /* 20px desde la derecha, 10px desde arriba 
+}
+*/

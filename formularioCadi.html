@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cadi</title>
+    <link rel="stylesheet" href="diseño-form.css">
+    <style>
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2f3;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #0C713D;
+        margin-top: 30px;
+    }
+    form {
+        width: 400px;
+        margin: 40px auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button-group input[type="submit"],
+    .button-group button {
+        background-color: #0C713D;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    .button-group input[type="submit"]:hover,
+    .button-group button:hover {
+        background-color: #09562d;
+    }
+    .button-group .secondary {
+        background-color: #045611;
+    }
+    .button-group .secondary:hover {
+        background-color: #025513;
+    }
+        .botones-complemento {
+        background-color: #0C713D; /* Verde corporativo */
+        color: white;              /* Letra blanca */
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    </style>
+</head>
+<body>
+
+<h1>REGISTRO DE CADI</h1>
+
+<form action="procesarCadi.php" method="POST" enctype="multipart/form-data">
+
+    
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre-cadi" required>
+
+
+    <label>Correo Electrónico:</label>
+    <input type="email" name="correo-cadi" required>
+
+    <label>Responsable:</label>
+    <input type="text" name="responsable-cadi" required>
+
+    <label>ubicacion:</label>
+    <input type="text" name="ubicacion-cadi" required>
+    
+
+    <button type="submit" class="botones-complemento">Registrar Cadi</button>
+
+
+        <input type="reset" class="botones-complemento" id="btn-limpiar-datos" name="limpiar-datos" value="Limpiar datos">
+       <br><br> <input type="button" class="botones-complemento" id="btn-menu-principal" name="menu-principal" value="Ir al menu principal" onclick="window.location.href='menu.php'">
+
+</form>
+
+</body>
+</html>
