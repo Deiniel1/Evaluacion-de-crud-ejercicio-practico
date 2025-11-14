@@ -108,6 +108,27 @@
         <img src="imagenes/Lmatricula.jpeg" alt="Listar Matriculas">
     </a>
 
+    <a href="FichaAprendiz.php" class="menu-item">
+        Ficha de aprendiz
+        <img src="imagenes/Lmatricula.jpeg" alt="Ficha Aprendiz">
+    </a>
+
+    <a href="BorrarAprendiz.php" class="menu-item">
+        Borrar Aprendices
+        <img src="imagenes/Lmatricula.jpeg" alt="Borrar Aprendiz">
+    </a>
+
+    <a href="RegistroBorrado.php" class="menu-item">
+        Registros de aprendices borrados
+        <img src="imagenes/Lmatricula.jpeg" alt="Registro Borrados">
+    </a>
+
+    <a href="RegistroConsultado.php" class="menu-item">
+        Registros de consulta
+        <img src="imagenes/Lmatricula.jpeg" alt="Registros consulta">
+    </a>
+
+
     <a href="https://www.ucundinamarca.edu.co/" class="menu-item">
         Salir
         <img src="imagenes/salir.png" alt="Salir">
